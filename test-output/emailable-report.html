@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">FREE CRM Application Test Automation Test Suite</th></tr>
+<tr><td><a href="#t0">Free CRM App Test Cases</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">396,091</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">FREE CRM Application Test Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Free CRM App Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m0">selectContactsByNameTest</a></td><td rowspan="1">1567090473226</td><td rowspan="1">2453</td></tr><tr><th colspan="4">Free CRM App Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m1">createNewContactTest</a></td><td rowspan="6">1567090588910</td><td rowspan="6">4743</td></tr><tr class="passedeven"><td><a href="#m2">createNewContactTest</a></td></tr><tr class="passedeven"><td><a href="#m3">createNewContactTest</a></td></tr><tr class="passedeven"><td><a href="#m4">createNewContactTest</a></td></tr><tr class="passedeven"><td><a href="#m5">createNewContactTest</a></td></tr><tr class="passedeven"><td><a href="#m6">createNewContactTest</a></td></tr><tr class="passedeven"><td><a href="#m7">verifyContactsLabelTest</a></td><td rowspan="1">1567090450078</td><td rowspan="1">83</td></tr><tr class="passedodd"><td rowspan="5">com.crm.qa.testcases.HomePageTest</td><td><a href="#m8">clickOnContactsLinkTest</a></td><td rowspan="1">1567090371002</td><td rowspan="1">3170</td></tr><tr class="passedodd"><td><a href="#m9">clickOnDealsLinkTest</a></td><td rowspan="1">1567090399319</td><td rowspan="1">3370</td></tr><tr class="passedodd"><td><a href="#m10">clickOnTaskLinkTest</a></td><td rowspan="1">1567090424847</td><td rowspan="1">3135</td></tr><tr class="passedodd"><td><a href="#m11">verifyHomePageTitleTest</a></td><td rowspan="1">1567090327984</td><td rowspan="1">9</td></tr><tr class="passedodd"><td><a href="#m12">verifyUserNameLabelTest</a></td><td rowspan="1">1567090349660</td><td rowspan="1">39</td></tr><tr class="passedeven"><td rowspan="3">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m13">crmLogoImageTest</a></td><td rowspan="1">1567090280203</td><td rowspan="1">288</td></tr><tr class="passedeven"><td><a href="#m14">loginPageTitleTest</a></td><td rowspan="1">1567090268526</td><td rowspan="1">284</td></tr><tr class="passedeven"><td><a href="#m15">loginTest</a></td><td rowspan="1">1567090292095</td><td rowspan="1">11616</td></tr></tbody>
+</table>
+<h2>Free CRM App Test Cases</h2><h3 id="m0">com.crm.qa.testcases.ContactsPageTest#selectContactsByNameTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;hidden&quot; name=&quot;id&quot; readonly=&quot;&quot; tabindex=&quot;0&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt; is not clickable at point (237, 473). Other element would receive the click: &lt;label&gt;&lt;/label&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-7QD4G53&apos;, ip: &apos;192.168.1.226&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Sujan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b400107381fae720faa3a4b7fbd6691
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:42)
+	at com.crm.qa.testcases.ContactsPageTest.selectContactsByNameTest(ContactsPageTest.java:59)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.crm.qa.testcases.ContactsPageTest#createNewContactTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Warren</td><td>Buffet</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.crm.qa.testcases.ContactsPageTest#createNewContactTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sam</td><td>Walton</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.crm.qa.testcases.ContactsPageTest#createNewContactTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Bill</td><td>Gates</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.crm.qa.testcases.ContactsPageTest#createNewContactTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Tom</td><td>Peter</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.crm.qa.testcases.ContactsPageTest#createNewContactTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Mark</td><td>Zuckerberg</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.crm.qa.testcases.ContactsPageTest#createNewContactTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Jeff</td><td>Bezos</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.crm.qa.testcases.ContactsPageTest#verifyContactsLabelTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.crm.qa.testcases.HomePageTest#clickOnContactsLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.crm.qa.testcases.HomePageTest#clickOnDealsLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.crm.qa.testcases.HomePageTest#clickOnTaskLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.crm.qa.testcases.HomePageTest#verifyHomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.crm.qa.testcases.HomePageTest#verifyUserNameLabelTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.crm.qa.testcases.LoginPageTest#crmLogoImageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.crm.qa.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.crm.qa.testcases.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
