@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,6 +14,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
+import com.crm.qa.base.TestBase;
 
 public class TestBase {
 	
@@ -21,11 +23,13 @@ public class TestBase {
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	
+	public static Logger log  = Logger.getLogger(TestBase.class);
+	
 	public TestBase()
 	{
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\Sujan\\eclipse-workspace2\\FreeCRMTest\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\Sujan\\eclipse-workspace2\\RoyalAlliancesTest\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -50,6 +54,9 @@ public class TestBase {
 			driver = new FirefoxDriver();
 		}
 		
+		//adding log message
+		log.info("**************************launching browser*******************************");
+				
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
